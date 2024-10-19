@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raw Honey Page</title>
+    <link rel="stylesheet" href="styles.css">
+	
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		body {
+			font-family: Arial, sans-serif;
+			line-height: 1.6;
+		}
+
+		#header {
+		  display: flex;
+		  justify-content: space-between;
+		  align-items: center;
+		  background: #333;
+		  padding: 10px 20px;
+		  color: #fff;
+		  position: sticky;
+		  top: 0;
+		  z-index: 1000;
+		}
+
+		#header-img {
+		  width: 50px;
+		}
+
+		#nav-bar {
+		  display: flex;
+		}
+
+		.nav-link {
+		  margin-left: 20px;
+		  color: #fff;
+		  text-decoration: none;
+		}
+
+		#nav-link:hover {
+		  text-decoration: underline;
+		}
+
+		#hero {
+		  background: #f4f4f4;
+		  padding: 60px 20px;
+		  text-align: center;
+		}
+
+		section {
+		  padding: 40px 20px;
+		  border-bottom: 1 px solid #ddd;
+		}
+
+		#video-section {
+		  text-align: center;
+		}
+
+		#video {
+		  max-width: 100%;
+		  height: auto;
+		}
+
+		#form {
+		  display: flex;
+		  flex-direction: column;
+		  align-items: center;
+		}
+
+		#email {
+		  padding: 10px;
+		  margin-bottom: 10px;
+		  width: 300px;
+		  max-width: 100%;
+		}
+
+		#submit {
+		  padding: 10px 20px;
+		  background: #333;
+		  color: #fff;
+		  border: none;
+		  cursor: pointer;
+		}
+
+		#submit:hover {
+		  background: #555;
+		}
+
+		footer {
+		  text-align: center;
+		  padding: 20px;
+		  background: #333;
+		  color: #fff;
+		}
+
+		@media (max-width: 768px) {
+		  #header {
+			flex-direction: column;
+			align-items: flex-start;
+		  }
+
+		  #nav-bar {
+			flex-direction: column;
+			width: 100%;
+		  }
+
+		  .nav-link {
+			margin: 10px 0;
+		  }
+		}
+
+		@media (max-width: 480px) {
+		  #email {
+			width: 100%;
+		  }
+		}
+	</style>
+  </head>
+  <body>
+    <header id="header">
+      <img id="header-img" src="logo.png" alt="product logo">
+      <nav id="nav-bar">
+        <a href="#feature1" class="nav-link">Antibacterial</a>
+        <a href="#feature2" class="nav-link">Nutritional</a>
+        <a href="#feature3" class="nav-link">Digestive Health</a>
+      </nav>
+    </header>
+
+    <section id="hero">
+      <h1>Welcome to Our Raw Honey app</h1>
+      <p>Discover the best features and benefits of our product.</p>
+    </section>
+
+    <section id="feature1">
+      <h2>Antibacterial and Healing Properties</h2>
+      <p>Raw honey has natural antibacterial and antimicrobial properties due to the presence of hydrogen peroxide, methylglyoxal, and other components. This makes it effective in wound healing, soothing sore throats, and acting as a natural remedy for infections. Its use in treating burns, cuts, and ulcers is well-documented, making it a valuable natural alternative for promoting healing and preventing infection.</p>
+    </section>
+
+    <section id="feature3">
+      <h2>Digestive Health Benefits</h2>
+      <p>Raw honey can support digestive health by promoting the growth of beneficial gut bacteria. It has prebiotic properties that help nourish good bacteria in the gut, which can improve digestion and overall gut health. Additionally, raw honey can soothe digestive issues such as acid reflux and indigestion due to its anti-inflammatory properties.</p>
+    </section>
+
+    <section id="feature2">
+      <h2>Nutritional and Antioxidant Properties</h2>
+      <p>Raw honey is rich in antioxidants, including phenolic compounds and flavonoids, which can help protect the body against cell damage caused by free radicals. These antioxidants are believed to have various health benefits, including reducing the risk of chronic diseases such as heart disease and cancer.</p>
+    </section>
+
+    <section id="video-section">
+      <h2>Our Product Video</h2>
+      <iframe id="video" width="540" height="310" src="https://www.youtube.com/watch?v=h1JDjiyoIM4" frame="0" allowfullscreenuy6></iframe>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <input type="submit" id="submit" value="submit">
+      </form>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 Your Company. All Rights Reserved.</p>  
+    </footer> 
+  </body>
+</html>

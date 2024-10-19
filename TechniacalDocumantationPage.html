@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+	
+	<style>
+		body {
+			display: flex;
+			margin: 0;
+			font-family: Arial, sans-serif;
+		}
+
+		#navbar {
+		  width: 200px;
+		  background-color: #f4f4f4;
+		  padding: 20px;
+		  position: fixed;
+		  height: 100%;
+		  overflow-y: auto;
+		}
+
+		#navbar header {
+		  font-size: 1.5em;
+		  margin-bottom: 1em;
+		}
+
+		#navbar .nav-link {
+		  display: block;
+		  margin: 10px 0;
+		  text-decoration: none;
+		  color: #333;
+		}
+
+		#navbar .nav-link:hover {
+		  text-decoration: underline;
+		}
+
+		#main-doc {
+		  margin-left: 220px;
+		  padding: 20px;
+		  width: 100%;
+		}
+
+		.main-section {
+		  margin-bottom: 40px;
+		}
+
+		.main-section header {
+		  font-size: 1.5em;
+		  margin-bottom: 10px;
+		}
+
+		pre {
+		  background-color: #f4f4f4;
+		  padding: 10px;
+		  border-radius: 5px;
+		  overflow-x: auto;
+		}
+
+		code {
+		  font-family: "Courier New", Courier, monospace;
+		}
+
+		@media (max-width: 768px) {
+		  #navbar {
+			width: 100%;
+			position: static;
+			height: auto;
+		  }
+
+		  #main-doc {
+			margin-left: 0;
+		  }
+		}
+	</style>
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>Tecnical Documentation</header>
+      <a class="nav-link" href="#Introduction">Introduction</a>
+      <a class="nav-link" href="#HTML_Basics">HTML Basics</a>
+      <a class="nav-link" href="#CSS_Basics">CSS Basics</a>
+      <a class="nav-link" href="#JavaScript_Basics">JavaScript Basics</a>
+      <a class="nav-link" href="#Conclusion">Conclusion</a>
+    </nav>
+    <main id="main-doc">
+      <section id="Introduction" class="main-section">
+        <header>Introduction</header>
+        <p>Welcome to the technical documentation page.</p>
+        <p>This document covers the basics of web development.</p>
+        <p>You will learn about HTML, CSS and JavaScript.</p>
+        <p>Each section provides examples and explanations.</p>
+        <p>Let's get started!</p>
+        <pre><code>// This is a code block example console.log('Hello, world!');</code></pre>
+      </section>
+      <section id="HTML_Basics" class="main-section">
+        <header>HTML Basics</header>
+        <p>HTML stands for HyperText Markup Language.</p>
+        <p>It is the standard language for creating web pages.</p>
+        <p>HTML describes the structure of a web page.</p>
+        <p>HTML elements are represented by tags.</p>
+        <p>Common HTML tags include &alt;div&gt;, &alt;p&gt;, and  &lt;a&gt;.</p>
+        <pre><code>&lt;div&gt;This is a div element&lt;/div&gt;</code></pre>
+        <ul>
+          <li>HTML is the foundation of web development.</li>
+          <li>It is easy to learn and use.</li>
+          <li>HTML elements form the building blocks of web pages.</li>
+        </ul>
+      </section>
+      <section id="CSS_Basics" class="main-section">
+        <header>CSS Basics</header>
+        <p>CSS stands for Cascading Style Sheets.</p>
+        <p>It describes how HTML elements are to be displayed.</p>
+        <p>CSS saves a lot of work by controlling the layout of multiple web pages.</p>
+      <p>External stylesheets are stored in CSS files.</p>
+      <p>CSS can be added to HTML elements in 3 ways: Inline, Internal, and External.</p>
+      <pre><code>body {
+  background-color: lightblue;
+}
+</code></pre>
+        <ul>
+          <li>CSS makes web pages look attractive.</li>
+          <li>It allows for flexible designs.</li>
+          <li>CSS is easy to learn and implement.</li>
+        </ul>
+      </section>
+      <section id="JavaScript_Basics" class="main-section">
+        <header>JavaScript Basics</header>
+        <p>JavaScript is programming language for the web.</p>
+        <p>It makes web pages interactive</p>
+        <p>JavaScript can update and change both HTML and CSS.</p>
+        <p>It can calculate, manipulate and validate data.</p>
+        <p>JavaScript is easy to learn and implement.</p>
+        <pre><code>function greet() {
+            alert('Hello, world');
+          }</code></pre>
+          <ul>
+            <li>JavaScript is an essential web technology.</li>
+            <li>It enhances user experience.</li>
+            <li>JavaScript works on both client and server sides.</li>
+          </ul>
+      </section>
+      <section id="Conclusion" class="main-section">
+        <header>Conclusion</header>
+        <p>Thank you for reading this technical documentation.</p>
+        <p>We hope you find it informative and helpful.</p>
+        <p>Practice is the key to mastering web development.</p>
+        <p>Happy coding!</p>
+        <pre><code>/* This is a CSS comment */
+            body {
+              font-family: Arial, sans-serif;
+            }
+          </code></pre>
+      </section>
+    </main>
+  </body>
+</html>
